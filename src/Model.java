@@ -45,5 +45,35 @@ public class Model {
 	    	  
 	    }
 	}
+	
+	//SQL pour insirer un enfant dans la base
+	public void InsirerEnfant (){
+		
+		try{
+        String query= "INSERT INTO Enfant VALUES ";
+        
+        ResultSet r= this.stmt.executeQuery(query);
+		}catch ( SQLException e) {
+			System.out.println("sql exception : "+ e);
+		}
+        
+
+		
+		
+	}
+	
+	//SQL pour insirer un employe dans la base 
+	public void InsirerEnmploye( String Nom , String Prenom , Date d ){
+		 d = "";
+		try{
+	        String query= "INSERT INTO Employe (Nom,Prenom,Age,Date Naissance,Date Joindre,Prix Conventioné,Prix Paye, Date Payment) VALUES ";
+	        
+	        ResultSet r= this.stmt.executeQuery(query);
+			}catch ( SQLException e) {
+				System.out.println("sql exception : "+ e);
+			}
+		
+		
+	}
 
 }
