@@ -47,10 +47,10 @@ public class Model {
 	}
 	
 	//SQL pour insirer un enfant dans la base
-	public void InsirerEnfant (){
+	public void InsirerEnfant (String Nom , String Prenom,int age, Date naissance,Date joindre, double prixconv, double prixpaye, Date datepay){
 		
 		try{
-        String query= "INSERT INTO Enfant VALUES ";
+        String query= "INSERT INTO Enfant (Nom,Prenom,Age,Date Naissance,Date Joindre,Prix Conventioné,Prix Paye, Date Payment) VALUES("+ Nom +","+  Prenom +"," + age +","+ naissance +","+joindre +","+ prixconv +","+ prixpaye +"," +datepay +")" ;
         
         ResultSet r= this.stmt.executeQuery(query);
 		}catch ( SQLException e) {
@@ -63,10 +63,10 @@ public class Model {
 	}
 	
 	//SQL pour insirer un employe dans la base 
-	public void InsirerEnmploye( String Nom , String Prenom , Date d ){
-		 d = "";
+	public void InsirerEnmploye(  ){
+		
 		try{
-	        String query= "INSERT INTO Employe (Nom,Prenom,Age,Date Naissance,Date Joindre,Prix Conventioné,Prix Paye, Date Payment) VALUES ";
+	        String query= "INSERT INTO Employe () VALUES ";
 	        
 	        ResultSet r= this.stmt.executeQuery(query);
 			}catch ( SQLException e) {
