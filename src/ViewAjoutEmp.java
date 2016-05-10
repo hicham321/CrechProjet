@@ -2,11 +2,12 @@ import java.awt.Panel;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 // interface pour Employe
-public class ViewAjoutEmp {
+public class ViewAjoutEmp extends JPanel {
 
-	private JLabel AjoutEmp = new JLabel("Ajouté Un Employé");
+	private JLabel AjoutEmp = new JLabel("Ajoutï¿½ Un Employï¿½");
 	
 	private JButton Ok = new JButton();
 	

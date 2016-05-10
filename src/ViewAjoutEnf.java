@@ -1,14 +1,16 @@
 import java.awt.Panel;
 
 
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 
-public class ViewAjoutEnf extends JFrame {
+public class ViewAjoutEnf extends JPanel {
 	
-	private JLabel AjoutEnf = new JLabel("Ajouté Un Enfant");
+	private JLabel AjoutEnf = new JLabel("Ajoutï¿½ Un Enfant");
 	
 	private JButton Ok = new JButton();
 	
@@ -19,11 +21,10 @@ public class ViewAjoutEnf extends JFrame {
 	public ViewAjoutEnf (){
 		
 		
-		Panel p = new Panel();
 		
-		p.add(this.AjoutEnf);
-		p.add(this.Ok);
-		p.add(this.Annuler);
+		this.add(this.AjoutEnf);
+		this.add(this.Ok);
+		add(this.Annuler);
 	
 		
 		
