@@ -50,7 +50,7 @@ public class Model {
 	public void InsirerEnfant (String Nom , String Prenom,int age, Date naissance,Date joindre, double prixconv, double prixpaye, Date datepay){
 		
 		try{
-        String query= "INSERT INTO Enfant (Nom,Prenom,Age,Date Naissance,Date Joindre,Prix Conventioné,Prix Paye, Date Payment) VALUES("+ Nom +","+  Prenom +"," + age +","+ naissance +","+joindre +","+ prixconv +","+ prixpaye +"," +datepay +")" ;
+        String query= "INSERT INTO Enfant (Nom,Prenom ,age, Naissance,Date Joindre,Prix Conventioné,Prix Paye, Date Payment) VALUES("+ "'"+Nom +"'"+","+ "'"+Prenom +"'"+"," + "'"+ age+"'" +","+ "'"+naissance+"'"+ ","+"'"+joindre+ "'"+","+"'"+ prixconv+"'"+","+ "'"+prixpaye+"'" + "," +"'"+datepay +"'" +")" ;
         
         ResultSet r= this.stmt.executeQuery(query);
 		}catch ( SQLException e) {
