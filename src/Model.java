@@ -66,7 +66,7 @@ public class Model {
 	public void InsirerEnmploye(String nom , String prenom , boolean payment , double prix ){
 		
 		try{
-	        String query= "INSERT INTO Employe ( Nom , Prenom , Payement , Prix ) VALUES ("+ nom + "," + prenom +","+ payment +","+ prix + ")";
+	        String query= "INSERT INTO Employe ( Nom , Prenom , Payement , Prix ) VALUES ("+ "'"+ nom+ "'"+ "," + "'"+prenom +"'"+","+ "'"+payment +"'"+","+ "'"+prix +"'"+")";
 	        
 	        ResultSet r= this.stmt.executeQuery(query);
 			}catch ( SQLException e) {
