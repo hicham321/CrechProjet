@@ -75,5 +75,26 @@ public class Model {
 		
 		
 	}
+	public void rechEmployer(String nom , String prenom){
+		try {
+			String query= "SELECT Nom,Prenom from  WHERE Mot= '" +nom +"'" +" and "+"Prenom"+"'"+prenom+"'" ;	         	        
+	         ResultSet r= this.stmt.executeQuery(query);
+	         
+	         while (r.next() ) {
+		            String Nom = r.getString("Nom");
+		            String Prenom = r.getString("Prenom");
+		            
+	        	}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e);
+			
+		}
+		
+	}
+	public void RechEnf(){
+		
+	}
 
 }
