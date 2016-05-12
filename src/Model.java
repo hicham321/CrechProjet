@@ -95,7 +95,28 @@ public class Model {
 		}
 		
 	}
-	public void RechEnf(){
+	public void RechEnf(String Nom , String Prenom){
+		try {
+			String query= "SELECT * from  WHERE Mot= '" +Nom +"'" +" and "+"Prenom"+"'"+Prenom+"'" ;	         	        
+	         ResultSet r= this.stmt.executeQuery(query);
+	         
+	         while (r.next() ) {
+		            String nom = r.getString("Nom");
+		            String prenom = r.getString("Prenom");
+		            int age = r.getInt("Age");
+		            Date naissance= r.getDate("Date Naissance");
+		            Date joindre = r.getDate("Date Joindre");
+		            double prixconv = r.getDouble("Prix conventioné");
+		            double PrixPay = r.getDouble("Prix Paye");
+		            Date datepay = r.getDate("Date Payement");
+		            
+	        	}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e);
+			
+		}
 		
 	}
 
