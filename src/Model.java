@@ -9,6 +9,8 @@ public class Model {
 	
 	
 	
+	
+	
 	public void connectio ( String path ){
 		
 		
@@ -63,7 +65,7 @@ public class Model {
 	}
 	
 	//SQL pour insirer un employe dans la base 
-	public void InsirerEnmploye(String nom , String prenom , boolean payment , double prix ){
+	public void InsirerEmploye(String nom , String prenom , boolean payment , double prix ){
 		
 		try{
 	        String query= "INSERT INTO Employe ( Nom , Prenom , Payement , Prix ) VALUES ("+ "'"+ nom+ "'"+ "," + "'"+prenom +"'"+","+ "'"+payment +"'"+","+ "'"+prix +"'"+")";
