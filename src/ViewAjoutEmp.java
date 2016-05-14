@@ -23,6 +23,7 @@ public class ViewAjoutEmp extends JPanel {
 		p.add(this.AjoutEmp);
 		p.add(this.Ok);
 		p.add(this.Annuler);
+		
 	
 		
 		
