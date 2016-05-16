@@ -1,6 +1,8 @@
 import java.awt.BorderLayout;
+import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -38,11 +40,15 @@ public class MainFrame extends JFrame {
 	
 	public MainFrame(){
 		
+        CardLayout mainLayout = new CardLayout();
+        setResizable(true);
+        setLayout(mainLayout);
+
         setSize(400,400);        
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        JPanel panelMain = new JPanel();
-        panelMain.setLayout(null);
+        JPanel panelMain = new JPanel(mainLayout);
+        //panelMain.setLayout(null);
         
         panelMain.add(but);
         but.setBounds(70,70,70,70);
