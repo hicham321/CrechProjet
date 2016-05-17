@@ -21,7 +21,7 @@ public class ViewAjoutEnf extends JPanel {
 	public ViewAjoutEnf (){
 		
 		
-		
+		this.setLayout(null);
 		this.add(this.AjoutEnf);
 		this.add(this.Ok);
 		this.add(this.Annuler);
