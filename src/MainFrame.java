@@ -22,7 +22,7 @@ public class MainFrame extends JFrame {
         //setLayout(mainLayout);
         setSize(400,400);        
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        this.add(card1);
         cards.add(card1, "Card 1");
         cards.add(card2, "Card 2");
         cards.add(card3, "Card 3");
