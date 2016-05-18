@@ -58,6 +58,7 @@ public class mainPanel extends JPanel {
 	       
 	        this.setBackground(Color.white);
 	        this.setBounds(0, 0, 400, 400);
+	        this.setVisible(true);
 		
 		
 	}

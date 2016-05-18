@@ -4,9 +4,10 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 
+
 public class MainFrame extends JFrame {
 	
-	JPanel cards = new JPanel();
+	JPanel cards ;
 	
 	mainPanel card1 = new mainPanel();
 	
@@ -17,21 +18,18 @@ public class MainFrame extends JFrame {
 	
 	public MainFrame(){
 		
-        //CardLayout mainLayout = new CardLayout();
         setResizable(true);
-        //setLayout(mainLayout);
         setSize(400,400);        
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.add(card1);
+        cards = new JPanel(new CardLayout());
         
-
         cards.add(card1, "Card 1");
         cards.add(card2, "Card 2");
         cards.add(card3, "Card 3");
-		
-	}
+        
+        getContentPane().add(cards); 
 	
-		
+	}
 	
 
 }
