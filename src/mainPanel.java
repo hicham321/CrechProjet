@@ -13,10 +13,12 @@ public class mainPanel extends JPanel {
 	
 	JButton but = new JButton("sdf");
 	
-	JMenu menuouvrir = new JMenu("Base");
+	JMenu menuouvrir = new JMenu("Fichier");
 	
 	JMenuItem ajoutbase = new JMenuItem("Ouvrir");
 	
+	JMenuItem quiter = new JMenuItem("Quitter");
+
 	JMenu menuenf = new JMenu("Enfant");
 	
 	JMenuItem ajoutEnf = new JMenuItem("Ajout Enf");
@@ -31,6 +33,9 @@ public class mainPanel extends JPanel {
 	
 	JMenuItem listeEmp = new JMenuItem("Liste Emp");
 	
+	JMenu menuapropos = new JMenu("A Propos");
+
+	
 	public mainPanel(){
 		
 		//modify this when changing to a different layout manager
@@ -44,6 +49,7 @@ public class mainPanel extends JPanel {
 	        menubar.setBounds(0, 0, 400, 30);
 	        
 	        menuouvrir.add(ajoutbase);
+	        menuouvrir.add(quiter);
 	        
 	        menuenf.add(ajoutEnf);
 	        menuenf.add(listeEnf);
@@ -51,10 +57,11 @@ public class mainPanel extends JPanel {
 	        
 	        menuemp.add(ajoutemp);
 	        menuemp.add(listeEmp);
-	        
+	       
 	        menubar.add(menuouvrir);
 	        menubar.add(menuenf);
 	        menubar.add(menuemp);
+	        menubar.add(menuapropos);
 	       
 	        this.setBackground(Color.white);
 	        this.setBounds(0, 0, 400, 400);
