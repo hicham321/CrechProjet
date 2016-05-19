@@ -18,6 +18,8 @@ public class mainPanel extends JPanel {
 	JMenuItem ajoutbase = new JMenuItem("Ouvrir");
 	
 	JMenuItem quiter = new JMenuItem("Quitter");
+	
+	JMenuItem motpass = new JMenuItem("Changer le mot de passe");
 
 	JMenu menuenf = new JMenu("Enfant");
 	
@@ -49,7 +51,9 @@ public class mainPanel extends JPanel {
 	        menubar.setBounds(0, 0, 400, 30);
 	        
 	        menuouvrir.add(ajoutbase);
+	        menuouvrir.add(motpass);
 	        menuouvrir.add(quiter);
+	        
 	        
 	        menuenf.add(ajoutEnf);
 	        menuenf.add(listeEnf);
