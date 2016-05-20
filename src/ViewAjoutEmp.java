@@ -17,16 +17,10 @@ public class ViewAjoutEmp extends JPanel {
 	
 	public ViewAjoutEmp (){
 		
-		
-		Panel p = new Panel();
-
-		p.add(this.AjoutEmp);
-		p.add(this.Ok);
-		p.add(this.Annuler);
-		
-	
-		
-		
+		add(this.AjoutEmp);
+		add(this.Ok);
+		add(this.Annuler);
+			
 	}
 
 }

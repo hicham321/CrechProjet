@@ -108,7 +108,7 @@ public class Model {
 		            int age = r.getInt("Age");
 		            Date naissance= r.getDate("Date Naissance");
 		            Date joindre = r.getDate("Date Joindre");
-		            double prixconv = r.getDouble("Prix conventioné");
+		            double prixconv = r.getDouble("Prix conventionï¿½");
 		            double PrixPay = r.getDouble("Prix Paye");
 		            Date datepay = r.getDate("Date Payement");
 		            
@@ -121,5 +121,7 @@ public class Model {
 		}
 		
 	}
+	//verify if the register table is empty to allow 
+	
 
 }

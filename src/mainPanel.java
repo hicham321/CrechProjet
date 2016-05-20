@@ -52,6 +52,7 @@ public class mainPanel extends JPanel {
 	        
 	        menuouvrir.add(ajoutbase);
 	        menuouvrir.add(motpass);
+	        menuouvrir.addSeparator();
 	        menuouvrir.add(quiter);
 	        
 	        
