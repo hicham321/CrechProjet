@@ -22,10 +22,15 @@ public class Controller {
 	 
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
-		
+		//dummy condition
 		if(arg0.getSource()==frame.getButButton()){
+			
+		} 
+		
+		//clicking Emp menu
+		if(arg0.getSource()==frame.getMenuempItem()){
 			CardLayout cardLayout = (CardLayout) frame.cards.getLayout();
-			cardLayout.show(frame.cards, "Card 2");
+			cardLayout.show(frame.cards, "Card 2");	
 		}
 		
 	} 

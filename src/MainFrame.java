@@ -3,6 +3,8 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 
 
@@ -36,13 +38,27 @@ public class MainFrame extends JFrame {
 	public void AddMainFrameAactionlistner (ActionListener listner ){
 		
 		this.card1.but.addActionListener(listner);
+		this.card1.ajoutbase.addActionListener(listner);
+		this.card1.ajoutemp.addActionListener(listner);
+		this.card1.ajoutEnf.addActionListener(listner);
+		this.card1.explore.addActionListener(listner);
+		this.card1.listeEmp.addActionListener(listner);
+		this.card1.listeEnf.addActionListener(listner);
+		this.card1.menuapropos.addActionListener(listner);
+
 		
 	}
-	//card1 components
+	
+	
+	//card1 components getters and setters
 	public JButton getButButton (){
 		
 		return this.card1.but;
 	}
+	
+   public JMenuItem getMenuempItem(){
+	   return this.card1.ajoutemp;
+   }
 	
 	//card2 components
 	
