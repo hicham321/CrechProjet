@@ -1,5 +1,7 @@
 import java.awt.CardLayout;
+import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -30,6 +32,22 @@ public class MainFrame extends JFrame {
         getContentPane().add(cards); 
 	
 	}
+	
+	public void AddMainFrameAactionlistner (ActionListener listner ){
+		
+		this.card1.but.addActionListener(listner);
+		
+	}
+	//card1 components
+	public JButton getButButton (){
+		
+		return this.card1.but;
+	}
+	
+	//card2 components
+	
+	
+	//card3 components
 	
 
 }
