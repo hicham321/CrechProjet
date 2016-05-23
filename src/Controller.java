@@ -1,3 +1,7 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.CardLayout;
+
 
 public class Controller {
 	
@@ -11,5 +15,24 @@ public class Controller {
 	 
 	 this.model= model;
 	 
+	 this.frame.AddMainFrameAactionlistner(new MainFrameAactionlistner());
+	 
+ }
+ class MainFrameAactionlistner implements ActionListener {
+	 
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		//dummy condition
+		if(arg0.getSource()==frame.getButButton()){
+			
+		} 
+		
+		//clicking Emp menu
+		if(arg0.getSource()==frame.getMenuempItem()){
+			CardLayout cardLayout = (CardLayout) frame.cards.getLayout();
+			cardLayout.show(frame.cards, "Card 2");	
+		}
+		
+	} 
  }
 }

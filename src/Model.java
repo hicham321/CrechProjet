@@ -115,13 +115,26 @@ public class Model {
 	        	}
 			
 		} catch (Exception e) {
-			// TODO: handle exception
+			
 			System.out.println(e);
 			
 		}
 		
 	}
 	//verify if the register table is empty to allow 
+	
+	public void checkdatabase (){
+		try {
+			String query= "SELECT * from Register " ;	
+	         ResultSet r= this.stmt.executeQuery(query);
+
+			
+		} catch (Exception e) {
+			System.out.println(e);
+
+		}
+		
+	}
 	
 
 }
