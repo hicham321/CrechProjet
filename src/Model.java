@@ -155,7 +155,7 @@ public class Model {
         }
 
 	}
-	public String username(){
+	public String usernamedatabase(){
 		try{
 			
         String query= "SELECT Utilisateur from Register " ;

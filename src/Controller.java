@@ -50,6 +50,9 @@ public class Controller {
 			boolean thereispass= model.checkdatabase();
 			if(thereispass){
 				
+					//select the
+				
+				
 			}
 			else{
 				//do something if there is no password
