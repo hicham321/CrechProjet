@@ -57,7 +57,7 @@ public class Register extends JFrame{
 		
 	}
 	
-	public void SetCheminLabel (String cheminlabel){
+	public void setCheminLabel (String cheminlabel){
 		
 		this.cheminlab.setText(cheminlabel);
 	}

@@ -44,6 +44,17 @@ public class Controller {
  class RegisterActionListner implements ActionListener{
 	 @Override
 	public void actionPerformed(ActionEvent arg0) {
+		 
+		 if(arg0.getSource()== register.getOk()){
+			 
+			boolean thereispass= model.checkdatabase();
+			if(thereispass){
+				
+			}
+			else{
+				//do something if there is no password
+			}
+		 }
 		
 	}
  }

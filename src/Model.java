@@ -136,6 +136,46 @@ public class Model {
 		}
 		
 	}
+	//return   the password and user name in the database
+	public String passdatabase(){
+		try{
+        String query= "SELECT MotPasse from Register" ;
+        
+        ResultSet r= this.stmt.executeQuery(query);
+        String result ="";
+		while (r.next() ) {
+            result = r.getString("MotPasse");
+   	    }
+		
+		
+		return result;
+        }catch(Exception e){
+        	
+        	return "false";
+        }
+
+	}
+	public String username(){
+		try{
+			
+        String query= "SELECT Utilisateur from Register " ;
+        
+        ResultSet r= this.stmt.executeQuery(query);
+        String result ="";
+		while (r.next() ) {
+			
+            result = r.getString("Utilisateur");
+   	    }
+
+		return "";
+		
+		}
+		catch(Exception e){
+			
+			return "false";
+		}
+	}
+	
 	
 
 }
