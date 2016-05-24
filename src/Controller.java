@@ -7,16 +7,21 @@ public class Controller {
 	
 	private MainFrame frame = new MainFrame();
 	
+	private Register register = new Register();
+	
 	private Model model = new  Model();
 	
- public Controller(MainFrame frame, Model model){
+ public Controller(MainFrame frame,Register register, Model model){
 	 
 	 this.frame= frame;
+	 
+	 this.register = register;
 	 
 	 this.model= model;
 	 
 	 this.frame.AddMainFrameAactionlistner(new MainFrameAactionlistner());
 	 
+	 this.register.AddRegisterActionlistner(new RegisterActionListner());
  }
  class MainFrameAactionlistner implements ActionListener {
 	 
@@ -34,5 +39,12 @@ public class Controller {
 		}
 		
 	} 
+ }
+ 
+ class RegisterActionListner implements ActionListener{
+	 @Override
+	public void actionPerformed(ActionEvent arg0) {
+		
+	}
  }
 }

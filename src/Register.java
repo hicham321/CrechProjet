@@ -1,3 +1,5 @@
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -21,9 +23,9 @@ public class Register extends JFrame{
 	
 	private JLabel motpasslab = new JLabel("Mot de Passe");
 	
-	private JTextField utiltext = new JTextField();
+	private JTextField utiltext = new JTextField(10);
 	
-	private JTextField motpasstext = new JTextField();
+	private JTextField motpasstext = new JTextField(10);
 	
 	//showing path to the database
 	
@@ -59,5 +61,26 @@ public class Register extends JFrame{
 		
 		this.cheminlab.setText(cheminlabel);
 	}
+	public void AddRegisterActionlistner (ActionListener listner ){
+		this.ok.addActionListener(listner);
+		this.annule.addActionListener(listner);
+		
+	}
+
+	public JButton getOk() {
+		return ok;
+	}
+	public JButton getAnnule() {
+		return annule;
+	}
+
+	public void setUtiltext(JTextField utiltext) {
+		this.utiltext = utiltext;
+	}
+
+	public void setMotpasstext(JTextField motpasstext) {
+		this.motpasstext = motpasstext;
+	}
+	
 
 }
