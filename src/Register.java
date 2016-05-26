@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.UIManager;
 
 //class for registration 
 
@@ -32,7 +33,7 @@ public class Register extends JFrame{
 	private JLabel cheminlab ;
 	
 	public Register(){
-		
+		platformLook();
 		setResizable(true);
         setSize(400,200);        
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -55,6 +56,14 @@ public class Register extends JFrame{
         
         this.setVisible(true);
 		
+	}
+     //platform look and feel
+	public void platformLook(){
+		 try { 
+			    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+			} catch (Exception e) {
+			    e.printStackTrace();
+			}
 	}
 	
 	public void setCheminLabel (String cheminlabel){
