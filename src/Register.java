@@ -34,7 +34,7 @@ public class Register extends JFrame{
 	public Register(){
 		
 		setResizable(true);
-        setSize(400,400);        
+        setSize(400,200);        
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         JPanel panel = new JPanel();
@@ -82,5 +82,12 @@ public class Register extends JFrame{
 		this.motpasstext = motpasstext;
 	}
 	
+	public String getPassText() {
+		return this.motpasstext.toString();
+	}
+	
+	public  String getUtilisateurText() {	
+		return this.utiltext.toString();
+	}
 
 }

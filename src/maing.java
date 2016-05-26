@@ -10,6 +10,7 @@ public class maing {
          Controller c = new Controller(frame,register, m);
          frame.setVisible(true);
          register.setVisible(true);
+         frame.setEnabled(false);
 
  }
 
