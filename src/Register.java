@@ -54,7 +54,6 @@ public class Register extends JFrame{
         
         this.add(panel);
         
-        this.setVisible(true);
 		
 	}
      //platform look and feel

@@ -20,11 +20,13 @@ public class MainFrame extends JFrame {
 	ViewAjoutEnf card3= new ViewAjoutEnf();
 	
 	
+	
 	public MainFrame(){
 		
         setResizable(true);
         setSize(400,400);        
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      
         cards = new JPanel(new CardLayout());
         
         cards.add(card1, "Card 1");
@@ -38,14 +40,7 @@ public class MainFrame extends JFrame {
 	public void AddMainFrameAactionlistner (ActionListener listner ){
 		
 		this.card1.but.addActionListener(listner);
-		this.card1.ajoutbase.addActionListener(listner);
-		this.card1.ajoutemp.addActionListener(listner);
-		this.card1.ajoutEnf.addActionListener(listner);
-		this.card1.explore.addActionListener(listner);
-		this.card1.listeEmp.addActionListener(listner);
-		this.card1.listeEnf.addActionListener(listner);
-		this.card1.menuapropos.addActionListener(listner);
-
+		
 		
 	}
 	
@@ -56,9 +51,7 @@ public class MainFrame extends JFrame {
 		return this.card1.but;
 	}
 	
-   public JMenuItem getMenuempItem(){
-	   return this.card1.ajoutemp;
-   }
+   
 	
 	//card2 components
 	

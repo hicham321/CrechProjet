@@ -14,6 +14,8 @@ public class Controller {
 	
 	private Model model = new  Model();
 	
+	private menubar menubar = new menubar();
+	
  public Controller(MainFrame frame,Register register, Model model){
 	 
 	 this.frame= frame;
@@ -25,6 +27,9 @@ public class Controller {
 	 this.frame.AddMainFrameAactionlistner(new MainFrameAactionlistner());
 	 
 	 this.register.AddRegisterActionlistner(new RegisterActionListner());
+	 
+	 this.menubar.AddMenuBarAactionlistner( new MenuBarAactionlistner() );
+	 
  }
  class MainFrameAactionlistner implements ActionListener {
 	 
@@ -36,10 +41,7 @@ public class Controller {
 		} 
 		
 		//clicking Emp menu
-		if(arg0.getSource()==frame.getMenuempItem()){
-			CardLayout cardLayout = (CardLayout) frame.cards.getLayout();
-			cardLayout.show(frame.cards, "Card 2");	
-		}
+		
 		
 	} 
  }
@@ -74,4 +76,15 @@ public class Controller {
 		
 	}
  }
+ class MenuBarAactionlistner implements ActionListener{
+	 
+	 @Override
+	public void actionPerformed(ActionEvent arg0) {
+		 if(arg0.getSource()==menubar.getMenuempItem()){
+				CardLayout cardLayout = (CardLayout) frame.cards.getLayout();
+				cardLayout.show(frame.cards, "Card 2");	
+			}		
+	}
+ }
+ 
 }
