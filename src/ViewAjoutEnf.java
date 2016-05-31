@@ -16,11 +16,11 @@ public class ViewAjoutEnf extends JPanel {
 	
 	private JButton Annuler = new JButton();
 	
-	
+	private menubar menub = new menubar();
 	
 	public ViewAjoutEnf (){
 		
-		
+		this.add(menub);
 		this.setLayout(null);
 		this.add(this.AjoutEnf);
 		this.add(this.Ok);

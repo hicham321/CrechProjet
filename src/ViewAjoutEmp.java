@@ -13,10 +13,11 @@ public class ViewAjoutEmp extends JPanel {
 	
 	private JButton annuler = new JButton("Annuler");
 	
-	
+	private menubar menub= new menubar();
 	
 	public ViewAjoutEmp (){
 		
+		add(this.menub);
 		add(this.ajoutEmp);
 		add(this.ok);
 		add(this.annuler);
