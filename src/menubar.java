@@ -32,7 +32,7 @@ public class menubar extends JMenuBar {
 	
 	public menubar(){
 		
-		    this.setBounds(0, 0, 400, 30);
+		    this.setBounds(0, 0, 900, 30);
 	        
 	        menuouvrir.add(ajoutbase);
 	        menuouvrir.add(motpass);

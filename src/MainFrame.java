@@ -24,9 +24,10 @@ public class MainFrame extends JFrame {
 	public MainFrame(){
 		
         setResizable(true);
-        setSize(400,400);        
+        setSize(800,800);        
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      
+        setLocationRelativeTo(null);
+
         cards = new JPanel(new CardLayout());
         
         cards.add(card1, "Card 1");

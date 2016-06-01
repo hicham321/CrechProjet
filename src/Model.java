@@ -123,15 +123,17 @@ public class Model {
 	}
 	//verify if the register table is empty to allow 
 	
-	public boolean checkdatabase (){
+	public boolean checkdatabase ()
+	{
 		
 		try {
-			String query= "SELECT * from Register " ;	
+			String query= "SELECT * FROM Register " ;	
 	         ResultSet r= this.stmt.executeQuery(query);
-        return !(r.isBeforeFirst());
+       return !(r.isBeforeFirst());
 			
 		} catch (Exception e) {
-			System.out.println(e);
+		    e.printStackTrace();
+
        return false ;
 		}
 		

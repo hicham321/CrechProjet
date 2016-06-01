@@ -33,11 +33,11 @@ public class Register extends JFrame{
 	private JLabel cheminlab ;
 	
 	public Register(){
-		platformLook();
+		//platformLook();
 		setResizable(true);
         setSize(400,200);        
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+        setLocationRelativeTo(null);
         JPanel panel = new JPanel();
         
         panel.add(bienvenu);

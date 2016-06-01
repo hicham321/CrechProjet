@@ -52,13 +52,14 @@ public class Controller {
 		 
 		 if(arg0.getSource()== register.getOk()){
 			 try{
-			     model.connectio("jdbc:ucanaccess://C:/Users/Hicham/Desktop/Database71.accdb");
-			 
+			     model.connectio("jdbc:ucanaccess://C:/Users/pc4u/Desktop/Base de données1.accdb");
+			     System.out.println("the pass is executed");
 			     boolean thereispass= model.checkdatabase();
+			     System.out.println("the pass is executed");
 			     if(thereispass){
 				    if((model.passdatabase().equals(register.getPassText()))&(model.usernamedatabase().equals(register.getUtilisateurText()))){
 					       register.dispose();
-					       frame.setEnabled(true);
+					       frame.dispose();
 				    }	
 				    else{
 				     	JOptionPane.showMessageDialog(null, "Mot de pass ou nom d'utilisateur incorrect");
@@ -73,6 +74,11 @@ public class Controller {
 				     e.printStackTrace();
 		      }
 		}
+		 if(arg0.getSource()== register.getAnnule()){
+			 
+			 register.dispose();
+			 frame.setEnabled(true);
+		 }
 		
 	}
  }
